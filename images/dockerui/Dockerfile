@@ -1,7 +1,7 @@
 # Docker Image for Dockerui
 
 # Set base image
-FROM igitras/golang
+FROM igitras/golang133
 
 COPY src/dockerui.tar.gz /application/src/dockerui.tar.gz
 
