@@ -1,23 +1,29 @@
 #!/bin/bash
 
 chmod 755 `find . -name '*.sh'`
+vendor=mason
 
 # This is the main build file for build all the docker images.
 
-# Build the build base image;
+# Build the Base image for the images need to build
 cd build && ./build.sh && cd ..
 
-# Build all the Apache images
+# Build Apache base images
 cd apache && ./build.sh && cd ..
 
-# Build php images
-cd php/php53 && ./build.sh && cd ../..
-cd php/php54 && ./build.sh && cd ../..
-cd php/php55 && ./build.sh && cd ../..
-cd php/php56 && ./build.sh && cd ../..
+# Build Php images
+cd php && ./build.sh && cd ..
 
+#cd php/php53 && ./build.sh && cd ../..
+#cd php/php54 && ./build.sh && cd ../..
+#cd php/php55 && ./build.sh && cd ../..
+#cd php/php56 && ./build.sh && cd ../..
+
+# Build Mysql images
+cd mysql && ./build.sh && cd ..
 
 # Build all the java images
+cd java && ./build.sh && cd ..
 #docker build -t igitras/java6 java/java6
 
 #docker build -t igitras/java6 java/java7
