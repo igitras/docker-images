@@ -1,5 +1,12 @@
 #!/bin/bash
 
+imageName=php53
+image=$vendor/$imageName
+
+chkresult=`docker images |grep $image |awk '{print $1}'`
+if [ ! $chkresult = $image ]
+then
+
 mkdir src
 cd src
 
@@ -29,4 +36,6 @@ cat > test.php << 'EOF'
 EOF
 
 cd ..
-docker build -t igitras/php53 .
+docker build -t $image .
+
+fi

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 chmod 755 `find . -name '*.sh'`
-vendor=mason
+vendor=igitras
 
 # This is the main build file for build all the docker images.
 
