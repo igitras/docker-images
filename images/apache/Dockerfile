@@ -29,7 +29,8 @@ RUN cd /application/src/httpd-$APACHE_VERSION \
     && cd ../.. \
     && rm -Rf src 
 
-COPY src/httpd.conf /application/apache/conf/
+RUN sed -i 's/#ServerName www.example.com:80/ServerName 0.0.0.0/g' /application/apache/conf/httpd.conf
+#COPY src/httpd.conf /application/apache/conf/
 
 # Add binary to PATH
 ENV PATH $PATH:/application/apache/bin
