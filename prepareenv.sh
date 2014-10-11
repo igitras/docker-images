@@ -32,7 +32,7 @@ fi
 
 if [ $docker = $dockerPath ]
 then
-vendor=mason
+vendor=igitras
 mkdir ~/docker/source/ -p
 cd ~/docker/source/
 sudo apt-get install debootstrap -y
