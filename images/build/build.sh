@@ -1,8 +1,8 @@
 #!/bin/bash
-
-image=igitras/build-base
+imageName=build-base
+image=$vendor/$imageName
 chkresult=`docker images |grep $image |awk '{print $1}'`
 if [ ! $chkresult = $image ]
 then
-docker build -t igitras/$image .
+docker build -t $image .
 fi
