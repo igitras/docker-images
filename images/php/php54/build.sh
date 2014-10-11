@@ -29,4 +29,4 @@ cat > test.php << 'EOF'
 EOF
 
 cd ..
-docker build -t igitras/php53 .
+docker build -t igitras/php54 .
