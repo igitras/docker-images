@@ -8,6 +8,13 @@ cd build && ./build.sh && cd ..
 # Build all the Apache images
 cd apache && ./build.sh && cd ..
 
+# Build php images
+cd php/php53 && ./build.sh && cd ../..
+cd php/php54 && ./build.sh && cd ../..
+cd php/php55 && ./build.sh && cd ../..
+cd php/php56 && ./build.sh && cd ../..
+
+
 # Build all the java images
 #docker build -t igitras/java6 java/java6
 
