@@ -9,7 +9,6 @@ if [ -z $chkresult ]
 then
 echo "bulid mysql 5.7 image"
 
-mkdir src
 cd src
 
 MYSQL_MAJOR=5.7

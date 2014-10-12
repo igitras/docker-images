@@ -6,22 +6,34 @@ vendor=igitras
 # This is the main build file for build all the docker images.
 
 # Build the Base image for the images need to build
+echo "build base image for build purpose"
 cd build && ./build.sh && cd ..
 
 # Build Apache base images
+echo "build apache image from source code with version 2.4"
 cd apache && ./build.sh && cd ..
 
 # Build Php images
+echo "build php images base previous apache image"
 cd php && ./build.sh && cd ..
 
 # Build all the Go Language images
+echo "build golang images"
 cd go && ./build.sh && cd ..
 
 # Build the Dockerui images
+echo "build the dockerui image base on previous golang image"
 cd dockerui && ./build.sh && cd ..
 
 # Build all the java images
+echo "build java images"
 cd java && ./build.sh && cd ..
+
+
+# Build all the tomcats base all java images
+echo "build tomcat images base on java images"
+cd tomcat && ./build.sh && cd ..
+
 
 # Build Mysql images
 cd mysql && ./build.sh && cd ..

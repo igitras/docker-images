@@ -8,7 +8,6 @@ if [ -z $chkresult ]
 then
 echo "bulid tomcat8 image"
 
-mkdir src
 cd src
 
 if [ ! -f apache-tomcat-8.0.14.tar.gz ]

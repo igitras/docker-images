@@ -35,7 +35,7 @@ RUN sed -i 's/#ServerName www.example.com:80/ServerName 0.0.0.0/g' /application/
 # Add binary to PATH
 ENV PATH $PATH:/application/apache/bin
 
-#ENTRYPOINT ["apachectl", "-k", "start", "-DFOREGROUND"]
+ENTRYPOINT ["apachectl", "-k", "start", "-DFOREGROUND"]
 
-#EXPOSE 80
+EXPOSE 80
 

@@ -1,7 +1,7 @@
 # Docker Image with Go Lang
 
 # Set base image
-FROM igitras/build-base
+FROM igitras/ubuntu
 
 RUN mkdir /application/src -p
 
