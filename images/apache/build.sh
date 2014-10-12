@@ -27,6 +27,6 @@ wget http://mirrors.hust.edu.cn/apache/apr/apr-util-1.5.4.tar.gz
 fi
 
 cd ..
+echo "build image with name $image"
 docker build -t $image .
-
 fi
