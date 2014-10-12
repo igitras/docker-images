@@ -5,7 +5,7 @@ FROM igitras/build-base
 
 RUN mkdir /application/src -p
 
-ENV VERSION 1.3.3
+ENV VERSION 1.3.2
 
 COPY src/go$VERSION.linux-amd64.tar.gz /application/src/go$VERSION.linux-amd64.tar.gz
 
