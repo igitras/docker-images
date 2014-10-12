@@ -4,8 +4,9 @@ imageName=golang132
 image=$vendor/$imageName
 
 chkresult=`docker images |grep $image |awk '{print $1}'`
-if [ ! $chkresult = $image ]
+if [ -z $chkresult ]
 then
+echo "bulid go 132 image"
 
 mkdir src
 cd src

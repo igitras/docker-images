@@ -4,8 +4,10 @@ imageName=mysql56
 image=$vendor/$imageName
 
 chkresult=`docker images |grep $image |awk '{print $1}'`
-if [ ! $chkresult = $image ]
+
+if [ -z $chkresult ]
 then
+echo "bulid mysql 5.6 image"
 
 mkdir src
 cd src

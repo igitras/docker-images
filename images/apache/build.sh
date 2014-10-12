@@ -4,8 +4,9 @@ imageName=apache24
 image=$vendor/$imageName
 
 chkresult=`docker images |grep $image |awk '{print $1}'`
-if [ ! $chkresult = $image ]
+if [ -z $chkresult ]
 then
+echo "bulid apache 2.4 image"
 
 mkdir src
 cd src

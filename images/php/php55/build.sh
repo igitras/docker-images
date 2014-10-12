@@ -4,8 +4,9 @@ imageName=php55
 image=$vendor/$imageName
 
 chkresult=`docker images |grep $image |awk '{print $1}'`
-if [ ! $chkresult = $image ]
+if [ -z $chkresult ]
 then
+echo "bulid php 5.5 image"
 
 mkdir src
 cd src
