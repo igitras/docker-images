@@ -11,11 +11,11 @@ fi
 cd ..
 
 cd java6
-ln -sf ../src/ ./src
+ln -s ../src/ ./src
 cd ../java7/
-ln -sf ../src/ ./src
+ln -s ../src/ ./src
 cd ../java8/
-ln -sf ../src/ ./src
+ln -s ../src/ ./src
 cd ..
 
 
