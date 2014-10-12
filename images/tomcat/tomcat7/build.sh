@@ -10,6 +10,14 @@ wget http://mirrors.hust.edu.cn/apache/tomcat/tomcat-7/v7.0.56/bin/apache-tomcat
 fi
 cd ..
 
+cd java6
+ln -sf ../src/ ./src
+cd ../java7/
+ln -sf ../src/ ./src
+cd ../java8/
+ln -sf ../src/ ./src
+cd ..
+
 imageName=tomcat7-java6
 image=$vendor/$imageName
 chkresult=`docker images |grep $image |awk '{print $1}'`
