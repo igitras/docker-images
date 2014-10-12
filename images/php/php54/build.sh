@@ -14,7 +14,7 @@ cd src
 
 if [ ! -f php-5.4.33.tar.gz ]
 then
-http://cn2.php.net/get/php-5.4.33.tar.gz/from/this/mirror
+wget http://cn2.php.net/distributions/php-5.4.33.tar.gz
 fi
 
 cat > php.conf << 'EOF'
