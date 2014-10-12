@@ -7,7 +7,7 @@ FROM igitras/java7
 MAINTAINER dongxu.m@gmail.com
 
 RUN mkdir /application/src/ -p
-ENV TOMCAT_VERSION 6.0.41
+ENV TOMCAT_VERSION 8.0.14
 
 COPY ../src/apache-tomcat-$TOMCAT_VERSION.tar.gz /application/src/apache-tomcat-$TOMCAT_VERSION.tar.gz
 

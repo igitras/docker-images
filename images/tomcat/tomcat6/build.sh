@@ -2,6 +2,7 @@
 
 vendor=igitras
 
+echo "bulid tomcat6 images"
 cd src
 if [ ! -f apache-tomcat-6.0.41.tar.gz ]
 then

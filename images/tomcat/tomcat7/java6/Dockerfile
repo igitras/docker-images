@@ -1,13 +1,13 @@
 # Docker base image for mysql
 
-# Set base image to igitras java7
-FROM igitras/java7
+# Set base image to igitras java6
+FROM igitras/java6
 
 # Maintainer information
 MAINTAINER dongxu.m@gmail.com
 
 RUN mkdir /application/src/ -p
-ENV TOMCAT_VERSION 6.0.41
+ENV TOMCAT_VERSION 7.0.56
 
 COPY ../src/apache-tomcat-$TOMCAT_VERSION.tar.gz /application/src/apache-tomcat-$TOMCAT_VERSION.tar.gz
 
