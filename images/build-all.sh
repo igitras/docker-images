@@ -14,21 +14,17 @@ cd apache && ./build.sh && cd ..
 # Build Php images
 cd php && ./build.sh && cd ..
 
-#cd php/php53 && ./build.sh && cd ../..
-#cd php/php54 && ./build.sh && cd ../..
-#cd php/php55 && ./build.sh && cd ../..
-#cd php/php56 && ./build.sh && cd ../..
+# Build all the Go Language images
+cd go && ./build.sh && cd ..
 
-# Build Mysql images
-cd mysql && ./build.sh && cd ..
+# Build the Dockerui images
+cd dockerui && ./build.sh && cd ..
 
 # Build all the java images
 cd java && ./build.sh && cd ..
-#docker build -t igitras/java6 java/java6
 
-#docker build -t igitras/java6 java/java7
-
-#docker build -t igitras/java6 java/java8
+# Build Mysql images
+cd mysql && ./build.sh && cd ..
 
 # Build all the tomcats base all java images
 #docker build -t igitras/java6-tomcat6 tomcat/java6-tomcat6
@@ -43,11 +39,6 @@ cd java && ./build.sh && cd ..
 #docker build -t igitras/java8-tomcat7 tomcat/java8-tomcat7
 #docker build -t igitras/java8-tomcat8 tomcat/java8-tomcat8
 
-
-# Build all the mysql images
-#docker build -t igitras/mysql56 mysql/mysql56
-
-#docker build -t igitras/mysql57 mysql/mysql57
 
 # Build all the Mongo images
 

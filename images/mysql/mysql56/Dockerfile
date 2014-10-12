@@ -8,7 +8,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 
 # Download Mysql and extract to /application/mysql
 ENV MYSQL_MAJOR 5.6
-ENV MYSQL_VERSION 5.6.20
+ENV MYSQL_VERSION 5.6.21
 RUN mkdir /application
 COPY src/mysql-$MYSQL_VERSION-linux-glibc2.5-x86_64.tar.gz /application/mysql-$MYSQL_VERSION-linux-glibc2.5-x86_64.tar.gz 
 
