@@ -1,5 +1,6 @@
 #!/bin/bash
 
+vendor=igitras
 imageName=dockerui
 image=$vendor/$imageName
 

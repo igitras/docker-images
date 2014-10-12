@@ -1,5 +1,6 @@
 #!/bin/bash
 
+vendor=igitras
 imageName=php54
 image=$vendor/$imageName
 

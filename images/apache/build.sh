@@ -1,8 +1,8 @@
 #!/bin/bash
 
+vendor=igitras
 imageName=apache24
 image=$vendor/$imageName
-
 chkresult=`docker images |grep $image |awk '{print $1}'`
 if [ -z $chkresult ]
 then

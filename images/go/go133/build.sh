@@ -1,5 +1,6 @@
 #!/bin/bash
 
+vendor=igitras
 imageName=golang133
 image=$vendor/$imageName
 

@@ -1,5 +1,6 @@
 #!/bin/sh
 
+vendor=igitras
 imageName=mysql57
 image=$vendor/$imageName
 
