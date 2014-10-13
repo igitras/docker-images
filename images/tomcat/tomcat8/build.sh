@@ -6,7 +6,7 @@ echo "bulid tomcat8 images"
 cd src
 if [ ! -f apache-tomcat-8.0.14.tar.gz ]
 then
-wget http://mirrors.hust.edu.cn/apache/tomcat/tomcat-8/v8.0.14/bin/apache-tomcat-8.0.14.tar.gz
+wget http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.14/bin/apache-tomcat-8.0.14.tar.gz
 fi
 cd ..
 
