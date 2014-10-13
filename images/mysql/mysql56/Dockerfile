@@ -23,11 +23,6 @@ RUN cd /application \
 # Add mysql binary to PATH
 ENV PATH $PATH:/application/mysql/bin:/application/mysql/scripts
 
-
-RUN apt-get update -y \
-    && apt-get upgrade -y \
-    && apt-get install libaio-dev -y
-
 # Set the working dir and mysql data dir
 WORKDIR /application/mysql
 VOLUME /application/data
