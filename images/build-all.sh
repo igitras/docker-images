@@ -17,6 +17,10 @@ cd apache && ./build.sh && cd ..
 echo "build php images base previous apache image"
 cd php && ./build.sh && cd ..
 
+# Build Php images
+echo "build wordpress image base previous php image"
+cd wordpress && ./build.sh && cd ..
+
 # Build all the Go Language images
 echo "build golang images"
 cd go && ./build.sh && cd ..
