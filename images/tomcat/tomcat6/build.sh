@@ -6,7 +6,7 @@ echo "bulid tomcat6 images"
 cd src
 if [ ! -f apache-tomcat-6.0.41.tar.gz ]
 then
-wget http://mirrors.hust.edu.cn/apache/tomcat/tomcat-6/v6.0.41/bin/apache-tomcat-6.0.41.tar.gz
+wget http://archive.apache.org/dist/tomcat/tomcat-6/v6.0.41/bin/apache-tomcat-6.0.41.tar.gz
 fi
 cd ..
 
