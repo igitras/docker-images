@@ -12,7 +12,7 @@ echo "bulid mysql 5.7 image"
 cd src
 
 MYSQL_MAJOR=5.7
-MYSQL_VERSION=5.7.5-m15
+MYSQL_VERSION=5.7.4-m14
 
 if [ ! -f mysql-$MYSQL_VERSION-linux-glibc2.5-x86_64.tar.gz ]
 then
