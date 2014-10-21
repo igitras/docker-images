@@ -17,17 +17,17 @@ APR_UTIL_VERSION=1.5.4
 
 if [ ! -f httpd-$APACHE_VERSION.tar.gz ]
 then
-wget http://mirrors.hust.edu.cn/apache/httpd/httpd-APACHE_VERSION.tar.gz
+wget hhttp://mirrors.aliyun.com/apache/httpd/httpd-APACHE_VERSION.tar.gz
 fi
 
 if [ ! -f apr-$APR_VERSION.tar.gz ]
 then
-wget http://mirrors.hust.edu.cn/apache/apr/apr-$APR_VERSION.tar.gz
+wget http://mirrors.aliyun.com/apache/apr/apr-$APR_VERSION.tar.gz
 fi
 
 if [ ! -f apr-util-$APR_UTIL_VERSION.tar.gz ]
 then
-wget http://mirrors.hust.edu.cn/apache/apr/apr-util-$APR_UTIL_VERSION.tar.gz
+wget http://mirrors.aliyun.com/apache/apr/apr-util-$APR_UTIL_VERSION.tar.gz
 fi
 
 cd ..
