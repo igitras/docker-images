@@ -52,17 +52,12 @@ cd mysql && ./build.sh && cd ..
 # Build Nginx images
 cd nginx && ./build.sh && cd ..
 
+# Build all the Node images
+cd node && ./build.sh && cd ..
 
 # Build all the Mongo images
 
 # Build all the Postgresql images
-
-
-# Build all the Nginx images
-
-# Build all the PHP images
-
-# Build all the Node images
 
 # Build all the Python images
 
