@@ -17,7 +17,7 @@ APR_UTIL_VERSION=1.5.4
 
 if [ ! -f httpd-$APACHE_VERSION.tar.gz ]
 then
-wget hhttp://mirrors.aliyun.com/apache/httpd/httpd-APACHE_VERSION.tar.gz
+wget hhttp://mirrors.aliyun.com/apache/httpd/httpd-$APACHE_VERSION.tar.gz
 fi
 
 if [ ! -f apr-$APR_VERSION.tar.gz ]
