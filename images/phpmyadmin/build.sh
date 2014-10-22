@@ -15,7 +15,7 @@ cd src
 VERSION=4.2.10
 if [ ! -f phpMyAdmin-$VERSION.tar.gz ]
 then
-wget http://nchc.dl.sourceforge.net/project/phpmyadmin/phpMyAdmin/$VERSION/phpM$
+wget http://nchc.dl.sourceforge.net/project/phpmyadmin/phpMyAdmin/$VERSION/phpMyAdmin-$VERSION.tar.gz
 unzip phpMyAdmin-$VERSION-all-languages.zip
 mv phpMyAdmin-$VERSION-all-languages phpMyAdmin-$VERSION
 tar zcvf phpMyAdmin-$VERSION.tar.gz phpMyAdmin-$VERSION/
