@@ -17,6 +17,10 @@ cd apache && ./build.sh && cd ..
 echo "build php images base previous apache image"
 cd php && ./build.sh && cd ..
 
+# Build PhpMyAdmin images
+echo "build phpMyAdmin images"
+cd phpmyadmin && ./build.sh && cd ..
+
 # Build Php images
 echo "build wordpress image base previous php image"
 cd wordpress && ./build.sh && cd ..
@@ -45,17 +49,15 @@ cd hudson && ./build.sh && cd ..
 # Build Mysql images
 cd mysql && ./build.sh && cd ..
 
+# Build Nginx images
+cd nginx && ./build.sh && cd ..
+
+# Build all the Node images
+cd node && ./build.sh && cd ..
 
 # Build all the Mongo images
 
 # Build all the Postgresql images
-
-
-# Build all the Nginx images
-
-# Build all the PHP images
-
-# Build all the Node images
 
 # Build all the Python images
 
