@@ -12,8 +12,9 @@ RUN cd /application/src \
     && tar zxvf rabbitmq-server-generic-unix-$VERSION.tar.gz \
     && mv rabbitmq_server-$VERSION /application/rabbitmq \
     && rm -Rf /application/src \
-    && rabbitmq-server --detached \
-    && rabbitmq-plugins enable rabbitmq_management
+    && /application/rabbitmq/sbin/rabbitmq-server --detached \
+    && /application/rabbitmq/sbin/rabbitmq-plugins enable rabbitmq_management \
+    && /application/rabbitmq/sbin/rabbitmqctl stop
 
 ENV RABBITMQ_HOME /application/rabbitmq
 
