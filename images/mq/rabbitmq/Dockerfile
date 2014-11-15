@@ -19,7 +19,7 @@ ENV RABBITMQ_HOME /application/rabbitmq
 
 ENV PATH $RABBITMQ_HOME/sbin:$PATH
 
-EXPOSE 5672 15672 25672
+EXPOSE 5672 15672 25672 4369
 
 CMD ["rabbitmq-server"]
 
