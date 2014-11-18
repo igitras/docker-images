@@ -55,7 +55,11 @@ cd nginx && ./build.sh && cd ..
 # Build all the Node images
 cd node && ./build.sh && cd ..
 
+# Build MQ images
+cd mq && ./build.sh && cd ..
+
 # Build all the Mongo images
+cd mongo && ./build.sh && cd ..
 
 # Build all the Postgresql images
 

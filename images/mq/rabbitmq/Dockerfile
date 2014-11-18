@@ -18,9 +18,7 @@ ENV RABBITMQ_HOME /application/rabbitmq
 
 ENV PATH $RABBITMQ_HOME/sbin:$PATH
 
-RUN rabbitmq-server -detached \
-    && rabbitmq-plugins enable rabbitmq_management \
-    && rabbitmqctl stop
+RUN rabbitmq-plugins enable rabbitmq_management
 
 EXPOSE 5672 15672 25672 4369
 
