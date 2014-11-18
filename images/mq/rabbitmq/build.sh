@@ -1,5 +1,3 @@
-http://www.rabbitmq.com/releases/rabbitmq-server/v3.4.1/rabbitmq-server-generic-unix-3.4.1.tar.gz
-
 #!/bin/bash
 
 vendor=igitras
