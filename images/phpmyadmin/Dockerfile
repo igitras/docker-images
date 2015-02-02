@@ -9,7 +9,7 @@ ENV VERSION 4.2.10
 COPY src/phpMyAdmin-$VERSION.tar.gz /application/src/phpMyAdmin-$VERSION.tar.gz
 
 RUN cd /application/src \
-    && tar zxvf phpMyAdmin-$VERSION.tar.gz \
+    && tar zxf phpMyAdmin-$VERSION.tar.gz \
     && cd phpMyAdmin-$VERSION \
     && mkdir config \
     && chmod 666 config \

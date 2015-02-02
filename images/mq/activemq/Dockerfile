@@ -7,7 +7,7 @@ ENV VERSION 5.10.0
 COPY src/apache-activemq-$VERSION-bin.tar.gz /application/src/apache-activemq-$VERSION-bin.tar.gz 
 
 RUN cd application/src/ \
-    && tar zxvf apache-activemq-$VERSION-bin.tar.gz \
+    && tar zxf apache-activemq-$VERSION-bin.tar.gz \
     && mv apache-activemq-$VERSION /application/activemq \
     && rm -Rf /application/src
 

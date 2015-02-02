@@ -10,7 +10,7 @@ RUN mkdir /application/src -p
 COPY src/php-$PHP_VERSION.tar.gz /application/src/php-$PHP_VERSION.tar.gz 
 
 RUN cd /application/src \
-    && tar zxvf php-$PHP_VERSION.tar.gz \
+    && tar zxf php-$PHP_VERSION.tar.gz \
     && rm -f *.tar.gz 
 
 RUN apt-get install -y libxml2-dev libmysqlclient-dev libssl-dev libcurl4-openssl-dev libxml2-dev libenchant-dev libgmp-dev libxslt1-dev  libmcrypt-dev libpspell-dev libedit-dev libgd2-xpm-dev libt1-dev libgmp-dev

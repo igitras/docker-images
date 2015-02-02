@@ -10,7 +10,7 @@ ENV VERSION 1.3.2
 COPY src/go$VERSION.linux-amd64.tar.gz /application/src/go$VERSION.linux-amd64.tar.gz
 
 RUN cd /application/src \
-    && tar zxvf go$VERSION.linux-amd64.tar.gz \
+    && tar zxf go$VERSION.linux-amd64.tar.gz \
     && mv go /application/
 
 

@@ -12,7 +12,7 @@ ENV TOMCAT_VERSION 8.0.14
 COPY src/apache-tomcat-$TOMCAT_VERSION.tar.gz /application/src/apache-tomcat-$TOMCAT_VERSION.tar.gz
 
 RUN cd /application/src \
-    && tar zxvf apache-tomcat-$TOMCAT_VERSION.tar.gz \
+    && tar zxf apache-tomcat-$TOMCAT_VERSION.tar.gz \
     && mv apache-tomcat-$TOMCAT_VERSION /application/tomcat \
     && rm -Rf /application/tomcat/webapps/examples /application/tomcat/webapps/docs \
     && rm -Rf /application/src

@@ -16,9 +16,9 @@ COPY src/pcre-$PCRE_VERSION.tar.gz /application/src/pcre-$PCRE_VERSION.tar.gz
 COPY src/zlib-$ZLIB_VERSION.tar.gz /application/src/zlib-$ZLIB_VERSION.tar.gz
 
 RUN cd /application/src \
-    && tar zxvf nginx-NGINX_VERSION.tar.gz \
-    && tar zxvf pcre-$PCRE_VERSION.tar.gz \
-    && tar zxvf zlib-$ZLIB_VERSION.tar.gz
+    && tar zxf nginx-NGINX_VERSION.tar.gz \
+    && tar zxf pcre-$PCRE_VERSION.tar.gz \
+    && tar zxf zlib-$ZLIB_VERSION.tar.gz
 
 RUN cd /application/src/nginx-$NGINX_VERSION \
     && ./configure --prefix=/application/nginx \

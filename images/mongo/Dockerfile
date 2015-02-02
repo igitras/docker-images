@@ -7,7 +7,7 @@ ENV VERSION 2.6.5
 COPY src/mongodb-linux-x86_64-$VERSION.tgz /application/src/mongodb-linux-x86_64-$VERSION.tgz
 
 RUN cd /application/src/ \
-    && tar zxvf mongodb-linux-x86_64-$VERSION.tgz \
+    && tar zxf mongodb-linux-x86_64-$VERSION.tgz \
     && mv mongodb-linux-x86_64-$VERSION /application/mongodb \
     && rm -Rf /application/src
 

@@ -10,7 +10,7 @@ RUN mkdir /application
 COPY src/jdk-$JAVA_VERSION-linux-x64.tar.gz /application/jdk-$JAVA_VERSION-linux-x64.tar.gz
 
 RUN cd /application \
-    && tar zxvf jdk-$JAVA_VERSION-linux-x64.tar.gz \
+    && tar zxf jdk-$JAVA_VERSION-linux-x64.tar.gz \
     && mv $JDK_EXTRACT jdk \
     && rm -Rf jdk-$JAVA_VERSION-linux-x64.tar.gz
 	

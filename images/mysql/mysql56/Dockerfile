@@ -13,7 +13,7 @@ RUN mkdir /application
 COPY src/mysql-$MYSQL_VERSION-linux-glibc2.5-x86_64.tar.gz /application/mysql-$MYSQL_VERSION-linux-glibc2.5-x86_64.tar.gz 
 
 RUN cd /application \
-    && tar zxvf mysql-$MYSQL_VERSION-linux-glibc2.5-x86_64.tar.gz \
+    && tar zxf mysql-$MYSQL_VERSION-linux-glibc2.5-x86_64.tar.gz \
     && mv mysql-$MYSQL_VERSION-linux-glibc2.5-x86_64 mysql \
     && rm -Rf /application/mysql/mysql-test /application/mysql/sql-bench \
     && rm -Rf /application/mysql/bin/*-debug /application/mysql/bin/*_embedded \

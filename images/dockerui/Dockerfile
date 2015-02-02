@@ -6,7 +6,7 @@ FROM igitras/golang133
 COPY src/dockerui.tar.gz /application/src/dockerui.tar.gz
 
 RUN cd /application/src \
-    && tar zxvf dockerui.tar.gz
+    && tar zxf dockerui.tar.gz
 
 RUN cd /application/src \
     && mv dockerui /application/ \

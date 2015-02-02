@@ -14,9 +14,9 @@ COPY src/apr-$APR_VERSION.tar.gz /application/src/apr-$APR_VERSION.tar.gz
 COPY src/apr-util-$APR_UTIL_VERSION.tar.gz /application/src/apr-util-$APR_UTIL_VERSION.tar.gz
 
 RUN cd /application/src \
-    && tar zxvf httpd-$APACHE_VERSION.tar.gz \
-    && tar zxvf apr-$APR_VERSION.tar.gz \
-    && tar zxvf apr-util-$APR_UTIL_VERSION.tar.gz \
+    && tar zxf httpd-$APACHE_VERSION.tar.gz \
+    && tar zxf apr-$APR_VERSION.tar.gz \
+    && tar zxf apr-util-$APR_UTIL_VERSION.tar.gz \
     && mv apr-$APR_VERSION ./httpd-$APACHE_VERSION/srclib/apr \
     && mv apr-util-$APR_UTIL_VERSION ./httpd-$APACHE_VERSION/srclib/apr-util \
     && rm -f *.tar.gz 
